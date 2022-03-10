@@ -34,7 +34,7 @@
     </ul>
     </nav>
   </div>
-{{ end }}
+{{ else }}
 
 {{/*
   Use Hugo's native related content feature to pull in content that may have similar parameters, like tags. etc.
@@ -56,4 +56,6 @@
 	    {{ end }}
     </ul>
 </div>
+{{ end }}
+
 {{ end }}
