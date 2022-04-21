@@ -21,7 +21,8 @@
     <nav id="seriesContents">
     <ul>
       {{ range (index .Site.Taxonomies.series ($seriesTitle | urlize)).Pages.ByWeight.Reverse }}
-      <li>
+      <li class="pv1">
+        {{ .Params.Series_Weight }}:
         {{ if eq $currentLink .Permalink }}
           » {{ .Title }}
         {{ else }}
